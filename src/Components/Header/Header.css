@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.midwidth {
+    max-width:75rem;
+    margin:0 auto;
+}
+
+.clear::after {
+    content: '';
+    clear: both;
+   display: block;
+}
+
+.header-top {background: #f4f4f4;}
+
+.header-top-row {padding: 0.313rem 0;}
+
+.header-top-row .header-top-text {
+    width: 42%;
+    float: left;
+}
+
+.header-top-row .header-top-text p {
+    display: inline-block;
+    color: #646161;
+    margin: 0.8rem 0 0 0.9375rem;
+    font-size:0.813rem;
+}
+
+.header-top-row .header-top-text p span {color: rgb(1, 43, 68);}
+
+.header-top-row .header-top-social {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.header-top-row .header-top-social ul {
+    list-style: none;
+    margin-right:0.188rem;
+}
+
+.header-top-row .header-top-social ul li {display: inline-block;}
+
+.header-top-row .header-top-social ul li a {
+    display: inline-block;
+    padding:0.625rem 0.5rem;
+    color: #646161;
+    font-size: 1rem;
+    transition: .2s;
+}
+
+.header-top-row .header-top-social ul li a:hover {color:rgb(1, 43, 68);}
+
+

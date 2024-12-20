@@ -1,0 +1,164 @@
+/* General Navbar Styles */
+.navbar {
+  width: 100%;
+  background-color: rgb(1, 43, 68);
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 1rem;
+}
+
+.logo-img {
+  height: 150px;
+  margin-left: -2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 0.625rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ebe5e5;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  display: block;
+}
+
+.nav-links a:hover,
+.booking:hover {
+  color: #d1c3c3;
+}
+
+.booking {
+  background-color: rgb(1, 43, 68);
+  padding: 0.625rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #ebe5e5;
+  color: #ebe5e5;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Menu Toggle Styles */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 24px;
+}
+
+.menu-toggle span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: transform 0.4s ease, opacity 0.4s ease, top 0.4s ease;
+  border-radius: 3px;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 0;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 10px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 20px;
+}
+
+.menu-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) scale(1.2);
+  top: 10px;
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) scale(1.2);
+  top: 10px;
+}
+
+/* Overlay Styles */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+
+.overlay.active {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 1000px) {
+  .navbar {
+    padding: 0 0.8rem;
+  }
+
+  .logo-img {
+    height: 100px;
+    margin-left: -2rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(1, 43, 68);
+    padding-top: 2rem;
+    transition: left 0.4s ease;
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+
+  .booking {
+    padding:0.5rem 0.6rem;
+    font-size: .9rem;
+  }
+  
+}
