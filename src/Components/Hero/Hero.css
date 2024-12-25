@@ -1,0 +1,19 @@
+.hero{
+  background:linear-gradient(rgba(0, 0, 0, 0.393),rgba(0, 0, 0, 0.438)) ,url(../img/img2.jpg);
+  height: 80vh;
+  padding-top:900px;
+  background-size: cover;
+  
+}
+
+@media(max-width:600px){
+
+  .hero{
+    background:linear-gradient(rgba(0, 0, 0, 0.393),rgba(0, 0, 0, 0.438)) ,url(../img/img2.jpg);
+    height:40vh;
+    padding-top:100px;
+    background-size: cover;
+    background-position: center;
+    
+  }
+}
