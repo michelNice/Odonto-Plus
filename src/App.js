@@ -7,6 +7,12 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
+
+      <div className="hi">
+
+        <p>Hi there</p>
+        
+      </div>
     </>
   );
 };

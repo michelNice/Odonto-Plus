@@ -1,9 +1,25 @@
-.hero{
+/*.hero{
   background:linear-gradient(rgba(0, 0, 0, 0.393),rgba(0, 0, 0, 0.438)) ,url(../img/img2.jpg);
-  height: 80vh;
-  padding-top:900px;
+  height: 90vh;
+  padding-top:400px;
   background-size: cover;
+  background-attachment: fixed;
   
+}
+
+
+.hero h1{
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
 }
 
 @media(max-width:600px){
@@ -16,4 +32,98 @@
     background-position: center;
     
   }
+}
+
+*/
+
+/* CSS (App.css) */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #fdf7f3;
+  font-family: "Arial", sans-serif;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 2rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #212121;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #00a7b7;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #5f5f5f;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.appointment-button,
+.studio-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-button {
+  background-color: #00a7b7;
+  color: #ffffff;
+}
+
+.appointment-button:hover {
+  background-color: #008b99;
+}
+
+.studio-button {
+  background-color: #ffffff;
+  color: #00a7b7;
+  border: 2px solid #00a7b7;
+}
+
+.studio-button:hover {
+  background-color: #e6f7f9;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 40%;
+  position: relative;
+}
+
+.image-frame {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

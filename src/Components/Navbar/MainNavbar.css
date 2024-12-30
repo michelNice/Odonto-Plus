@@ -6,6 +6,11 @@
   z-index: 1000;
 }
 
+.hi{
+  background: yellow;
+  height: 10vh;
+}
+
 .navbar-flex {
   display: flex;
   justify-content: space-between;
